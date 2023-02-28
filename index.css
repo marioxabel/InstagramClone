@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #F5F5F5;
+}
+
+/* Typo */
+
+
+/* Styling */
+
+.container {
+    width: 375px;
+    height: 67px;
+    margin: 0 auto;
+    background: white;
+}
+
+header{
+    border-bottom: 1px solid #C6C6C6;;
+    padding: 16px;
+    height: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: auto;
+    height: 33px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 34px;
+}
