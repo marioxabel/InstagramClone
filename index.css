@@ -5,11 +5,24 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: #F5F5F5;
+    background: #f5f5f5; 
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Typo */
+h1, p {
+    margin: 0;
+}
 
+h1, span {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+}
 
 /* Styling */
 
@@ -36,4 +49,35 @@ header{
 .avatar {
     border-radius: 50%;
     width: 34px;
+}
+
+.postHeader{ 
+    padding: 10px;
+    background-color: white;
+    display: flex;
+}
+
+.postHeader .avatar {
+    width: 34px;
+    height: 100%;
+    margin-right: 7px;
+}
+
+.post {
+    width: 100%;
+}
+
+.postBottom {
+    padding: 21px 10px 10px 16px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+.postBottom img {
+    height: 22px;
+    margin-right: 20px;
+}
+
+.bottomText {
+    margin-top: 10px;
 }

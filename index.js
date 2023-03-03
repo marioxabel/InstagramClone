@@ -1,3 +1,4 @@
+const main = document.getElementById("main")
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -27,4 +28,32 @@ const posts = [
         likes: 152
     }
 ]
+
+
+
+function render(array){
+    for (let i = 0; i < array.length; i++) {
+        main.innerHTML += `
+                            
+                            <div class="postHeader">
+                                <img class="avatar" src="${array[i].avatar}">
+                                <div class="postTitle">
+                                    <h1>${array[i].name}</h1>
+                                    <p>${array[i].location}</p>
+                                </div>
+                            </div> 
+                                <img class="post" src="${array[i].post}">
+                            <div class="postBottom">
+                                <img src="./images/icon-heart.png">
+                                <img src="./images/icon-comment.png">
+                                <img src="./images/icon-dm.png">
+                                <h1 class="bottomText">${array[i].likes} likes</h1>
+                                <p class="bottomText"><span>${array[i].username}</span> ${array[i].comment}</p>
+                            </div>
+                        
+                        ` 
+    }
+}
+
+render(posts)
 
